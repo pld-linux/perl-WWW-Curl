@@ -3,8 +3,8 @@
 %bcond_with	tests	# perform "make test" (fetches URL passed interactively)
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	WWW
-%define	pnam	Curl
+%define		pdir	WWW
+%define		pnam	Curl
 Summary:	WWW::Curl::easy - Perl extension interface for libcurl
 Summary(pl):	WWW::Curl::easy - interfejs perlowy do biblioteki libcurl
 Name:		perl-WWW-Curl
