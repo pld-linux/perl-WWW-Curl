@@ -42,7 +42,6 @@ nazewnictwa.
 %build
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
-
 %{__make} \
 	OPTIMIZE="%{rpmcflags}"
 
