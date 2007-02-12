@@ -6,7 +6,7 @@
 %define		pdir	WWW
 %define		pnam	Curl
 Summary:	WWW::Curl::easy - Perl extension interface for libcurl
-Summary(pl):	WWW::Curl::easy - interfejs perlowy do biblioteki libcurl
+Summary(pl.UTF-8):   WWW::Curl::easy - interfejs perlowy do biblioteki libcurl
 Name:		perl-WWW-Curl
 Version:	3.02
 Release:	1
@@ -28,12 +28,12 @@ WWW::Curl::easy provides an interface to the libcurl C library
 Before v2.0, this module was called 'Curl::easy'. The name has changed
 to better suit CPAN naming guidelines.
 
-%description -l pl
+%description -l pl.UTF-8
 WWW::Curl::easy dostarcza interfejs do biblioteki C libcurl
 (http://curl.haxx.se/).
 
-Przed wersj± 2.0 ten modu³ nazywa³ siê Curl::easy. Nazwa zosta³a
-zmieniona, aby lepiej pasowa³a do wytycznych CPAN dotycz±cych
+Przed wersjÄ… 2.0 ten moduÅ‚ nazywaÅ‚ siÄ™ Curl::easy. Nazwa zostaÅ‚a
+zmieniona, aby lepiej pasowaÅ‚a do wytycznych CPAN dotyczÄ…cych
 nazewnictwa.
 
 %prep
