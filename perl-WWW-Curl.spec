@@ -6,7 +6,7 @@
 %define		pdir	WWW
 %define		pnam	Curl
 Summary:	WWW::Curl::easy - Perl extension interface for libcurl
-Summary(pl.UTF-8):   WWW::Curl::easy - interfejs perlowy do biblioteki libcurl
+Summary(pl.UTF-8):	WWW::Curl::easy - interfejs perlowy do biblioteki libcurl
 Name:		perl-WWW-Curl
 Version:	3.02
 Release:	1
