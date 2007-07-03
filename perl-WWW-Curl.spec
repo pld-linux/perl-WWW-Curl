@@ -9,7 +9,7 @@ Summary:	WWW::Curl::easy - Perl extension interface for libcurl
 Summary(pl.UTF-8):	WWW::Curl::easy - interfejs perlowy do biblioteki libcurl
 Name:		perl-WWW-Curl
 Version:	3.02
-Release:	1
+Release:	2
 License:	MPL or MIT/X
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
