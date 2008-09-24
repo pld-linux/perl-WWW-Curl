@@ -44,7 +44,9 @@ nazewnictwa.
 	INSTALLDIRS=vendor
 %{__make} \
 	CC="%{__cc}" \
-	OPTIMIZE="%{rpmcflags}"
+	LD="%{__cc}" \
+	OPTIMIZE="%{rpmcflags}" \
+	OTHERLDFLAGS="%{rpmldflags}"
 
 %{?with_tests:%{__make} test}
 
