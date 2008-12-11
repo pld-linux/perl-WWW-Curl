@@ -23,14 +23,14 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 WWW::Curl::easy provides an interface to the libcurl C library
-(http://curl.haxx.se/).
+<http://curl.haxx.se/>.
 
 Before v2.0, this module was called 'Curl::easy'. The name has changed
 to better suit CPAN naming guidelines.
 
 %description -l pl.UTF-8
 WWW::Curl::easy dostarcza interfejs do biblioteki C libcurl
-(http://curl.haxx.se/).
+<http://curl.haxx.se/>.
 
 Przed wersją 2.0 ten moduł nazywał się Curl::easy. Nazwa została
 zmieniona, aby lepiej pasowała do wytycznych CPAN dotyczących
@@ -53,8 +53,13 @@ nazewnictwa.
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install \
+%{__make} pure_install \
 	DESTDIR=$RPM_BUILD_ROOT
+
+rm -f $RPM_BUILD_ROOT%{perl_vendorarch}/auto/WWW/Curl/.packlist
+# package || remove?
+rm -f $RPM_BUILD_ROOT%{perl_vendorarch}/auto/WWW/Curl/Easy/autosplit.ix
+rm -f $RPM_BUILD_ROOT%{perl_vendorarch}/auto/WWW/Curl/Share/autosplit.ix
 
 %clean
 rm -rf $RPM_BUILD_ROOT
