@@ -1,6 +1,6 @@
 #
 # Conditional build:
-%bcond_with	tests	# perform "make test" (fetches URL passed interactively)
+%bcond_without	tests	# perform "make test" (fetches URL passed interactively)
 #
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	WWW
@@ -8,12 +8,12 @@
 Summary:	WWW::Curl::easy - Perl extension interface for libcurl
 Summary(pl.UTF-8):	WWW::Curl::easy - interfejs perlowy do biblioteki libcurl
 Name:		perl-WWW-Curl
-Version:	4.12
-Release:	2
+Version:	4.13
+Release:	1
 License:	MPL or MIT/X
 Group:		Development/Languages/Perl
 Source0:	http://search.cpan.org/CPAN/authors/id/S/SZ/SZBALINT/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	b7f0eaf81b118d9a9b4e94b40aa40543
+# Source0-md5:	be48be1c2d74d39e973184110010f5b7
 URL:		http://curl.haxx.se/libcurl/perl/
 BuildRequires:	curl-devel
 BuildRequires:	perl-devel >= 1:5.8.0
