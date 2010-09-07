@@ -1,6 +1,6 @@
 #
 # Conditional build:
-%bcond_without	tests	# perform "make test" (fetches URL passed interactively)
+%bcond_with	tests	# perform "make test" (fetches URL passed interactively)
 #
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	WWW
