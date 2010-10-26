@@ -8,12 +8,12 @@
 Summary:	WWW::Curl::easy - Perl extension interface for libcurl
 Summary(pl.UTF-8):	WWW::Curl::easy - interfejs perlowy do biblioteki libcurl
 Name:		perl-WWW-Curl
-Version:	4.13
-Release:	2
+Version:	4.14
+Release:	1
 License:	MPL or MIT/X
 Group:		Development/Languages/Perl
 Source0:	http://search.cpan.org/CPAN/authors/id/S/SZ/SZBALINT/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	be48be1c2d74d39e973184110010f5b7
+# Source0-md5:	d57bc06036e13c1d1071a8c86193de40
 URL:		http://curl.haxx.se/libcurl/perl/
 BuildRequires:	curl-devel
 BuildRequires:	perl-devel >= 1:5.8.0
