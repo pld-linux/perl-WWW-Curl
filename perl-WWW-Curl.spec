@@ -8,12 +8,12 @@
 Summary:	WWW::Curl::easy - Perl extension interface for libcurl
 Summary(pl.UTF-8):	WWW::Curl::easy - interfejs perlowy do biblioteki libcurl
 Name:		perl-WWW-Curl
-Version:	4.14
-Release:	2
+Version:	4.15
+Release:	1
 License:	MPL or MIT/X
 Group:		Development/Languages/Perl
-Source0:	http://search.cpan.org/CPAN/authors/id/S/SZ/SZBALINT/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	d57bc06036e13c1d1071a8c86193de40
+Source0:	http://www.cpan.org/modules/by-authors/id/S/SZ/SZBALINT/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	31c0b8c7e5e2d26bcc8213d702186d5f
 URL:		http://curl.haxx.se/libcurl/perl/
 BuildRequires:	curl-devel
 BuildRequires:	perl-devel >= 1:5.8.0
@@ -56,10 +56,7 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} pure_install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-rm -f $RPM_BUILD_ROOT%{perl_vendorarch}/auto/WWW/Curl/.packlist
-# package || remove?
-rm -f $RPM_BUILD_ROOT%{perl_vendorarch}/auto/WWW/Curl/Easy/autosplit.ix
-rm -f $RPM_BUILD_ROOT%{perl_vendorarch}/auto/WWW/Curl/Share/autosplit.ix
+%{__rm} $RPM_BUILD_ROOT%{perl_vendorarch}/auto/WWW/Curl/.packlist
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -72,4 +69,4 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{perl_vendorarch}/auto/WWW/Curl
 %{perl_vendorarch}/auto/WWW/Curl/Curl.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/WWW/Curl/Curl.so
-%{_mandir}/man3/*.3*
+%{_mandir}/man3/WWW::Curl.3pm*
