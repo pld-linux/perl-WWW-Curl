@@ -67,6 +67,5 @@ rm -rf $RPM_BUILD_ROOT
 %{perl_vendorarch}/WWW/Curl.pm
 %{perl_vendorarch}/WWW/Curl
 %dir %{perl_vendorarch}/auto/WWW/Curl
-%{perl_vendorarch}/auto/WWW/Curl/Curl.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/WWW/Curl/Curl.so
 %{_mandir}/man3/WWW::Curl.3pm*
