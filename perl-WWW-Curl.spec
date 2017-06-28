@@ -8,15 +8,17 @@
 Summary:	WWW::Curl::easy - Perl extension interface for libcurl
 Summary(pl.UTF-8):	WWW::Curl::easy - interfejs perlowy do biblioteki libcurl
 Name:		perl-WWW-Curl
-Version:	4.15
-Release:	9
+Version:	4.17
+Release:	1
 License:	MPL or MIT/X
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-authors/id/S/SZ/SZBALINT/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	31c0b8c7e5e2d26bcc8213d702186d5f
+# Source0-md5:	997ac81cd6b03b30b36f7cd930474845
+Patch0:		WWW-Curl-4.17-Skip-preprocessor-symbol-only-CURL_STRICTER.patch
 URL:		http://curl.haxx.se/libcurl/perl/
 BuildRequires:	curl-devel
 BuildRequires:	perl-devel >= 1:5.8.0
+BuildRequires:	perl-Module-Install
 BuildRequires:	rpm-perlprov >= 4.1-13
 Obsoletes:	perl-Curl-easy
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -38,6 +40,7 @@ nazewnictwa.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
+%patch0 -p1
 
 %build
 %{__perl} Makefile.PL \
