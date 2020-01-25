@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_with	tests	# perform "make test" (fetches URL passed interactively)
 #
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	WWW
 %define		pnam	Curl
 Summary:	WWW::Curl::easy - Perl extension interface for libcurl
