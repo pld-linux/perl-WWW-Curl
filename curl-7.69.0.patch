@@ -1,0 +1,12 @@
+diff -ur WWW-Curl-4.17.orig/Makefile.PL WWW-Curl-4.17/Makefile.PL
+--- WWW-Curl-4.17.orig/Makefile.PL	2020-04-29 23:23:07.018641000 +0200
++++ WWW-Curl-4.17/Makefile.PL	2020-04-29 23:23:24.517641000 +0200
+@@ -127,7 +127,7 @@
+     close H;
+ 
+     for my $e (sort @syms) {
+-       if($e =~ /(OBSOLETE|^CURL_EXTERN|^CURL_STRICTER\z|^CURL_DID_MEMORY_FUNC_TYPEDEFS\z|_LAST\z|_LASTENTRY\z|^CURLINC_)/) {
++       if($e =~ /(OBSOLETE|^CURL_EXTERN|^CURL_STRICTER\z|^CURL_WIN32\z|^CURLOPT\z|^CURL_DID_MEMORY_FUNC_TYPEDEFS\z|_LAST\z|_LASTENTRY\z|^CURLINC_)/) {
+           next;
+        }
+        my ($group) = $e =~ m/^([^_]+_)/;
