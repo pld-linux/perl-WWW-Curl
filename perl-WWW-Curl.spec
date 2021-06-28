@@ -21,6 +21,7 @@ BuildRequires:	curl-devel
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	perl-Module-Install
 BuildRequires:	rpm-perlprov >= 4.1-13
+BuildRequires:	rpmbuild(macros) >= 1.745
 Obsoletes:	perl-Curl-easy
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
