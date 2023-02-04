@@ -16,6 +16,8 @@ Source0:	http://www.cpan.org/modules/by-authors/id/S/SZ/SZBALINT/%{pdir}-%{pnam}
 Patch0:		WWW-Curl-4.17-Skip-preprocessor-symbol-only-CURL_STRICTER.patch
 Patch1:		curl-7.66.0.patch
 Patch2:		curl-7.69.0.patch
+Patch3:		WWW-Curl-Adapt-to-curl-7.87.0.patch
+Patch4:		WWW-Curl-Work-around-a-macro-bug-in-curl-7.87.0.patch
 URL:		http://curl.haxx.se/libcurl/perl/
 BuildRequires:	curl-devel
 BuildRequires:	perl-devel >= 1:5.8.0
@@ -45,6 +47,8 @@ nazewnictwa.
 %patch0 -p1
 %patch1 -p1
 %patch2 -p1
+%patch3 -p1
+%patch4 -p1
 
 %build
 %{__perl} Makefile.PL \
