@@ -18,7 +18,7 @@ Patch1:		curl-7.66.0.patch
 Patch2:		curl-7.69.0.patch
 Patch3:		WWW-Curl-Adapt-to-curl-7.87.0.patch
 Patch4:		WWW-Curl-Work-around-a-macro-bug-in-curl-7.87.0.patch
-URL:		http://curl.haxx.se/libcurl/perl/
+URL:		https://metacpan.org/dist/WWW-Curl
 BuildRequires:	curl-devel
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	perl-Module-Install
