@@ -18,6 +18,7 @@ Patch1:		curl-7.66.0.patch
 Patch2:		curl-7.69.0.patch
 Patch3:		WWW-Curl-Adapt-to-curl-7.87.0.patch
 Patch4:		WWW-Curl-Work-around-a-macro-bug-in-curl-7.87.0.patch
+Patch5:		skip-symbols.patch
 URL:		https://metacpan.org/dist/WWW-Curl
 BuildRequires:	curl-devel
 BuildRequires:	perl-devel >= 1:5.8.0
@@ -49,6 +50,7 @@ nazewnictwa.
 %patch -P2 -p1
 %patch -P3 -p1
 %patch -P4 -p1
+%patch -P5 -p0
 
 %build
 %{__perl} Makefile.PL \
